@@ -1,7 +1,7 @@
 import React from 'react';
 import HelloWorld from './Hello';
 import MyComponent from './MyComponent';
-import Counter from './Counter';
+import CounterComponent from './Counter';
 import Login from './ConditionalComponent';
 import ListComponent from './ListComponent';
 import FormComponent from './FormComponent';
@@ -13,7 +13,7 @@ function App() {
     <div className='App'>
       <HelloWorld />
       <MyComponent />
-      <Counter message="This is is a counter component with increment and decrement functionality!"/>
+      <CounterComponent message="This is is a counter component with increment and decrement functionality!"/>
       <Login />
       <ListComponent items={items}/>
       <FormComponent />
