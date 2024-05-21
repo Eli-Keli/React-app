@@ -4,6 +4,7 @@ import MyComponent from './MyComponent';
 import Counter from './Counter';
 import Login from './ConditionalComponent';
 import ListComponent from './ListComponent';
+import FormComponent from './FormComponent';
 
 function App() {
   const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
@@ -15,6 +16,7 @@ function App() {
       <Counter message="This is is a counter component with increment and decrement functionality!"/>
       <Login />
       <ListComponent items={items}/>
+      <FormComponent />
     </div>
   )
 }
