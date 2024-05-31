@@ -7,7 +7,8 @@ import ListComponent from './ListComponent';
 import FormComponent from './FormComponent';
 
 function App() {
-  const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+  const items = ["New York,", "Tokyo", "London", "San Fransisco"];
+
 
   return (
     <div className='App'>
@@ -15,7 +16,7 @@ function App() {
       <MyComponent />
       <CounterComponent message="This is is a counter component with increment and decrement functionality!"/>
       <Login />
-      <ListComponent items={items}/>
+      <ListComponent items={items} heading="Cities"/>
       <FormComponent />
     </div>
   )
