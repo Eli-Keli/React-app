@@ -9,10 +9,17 @@ function Login() {
 
     return (
         <div>
-            <h2>{isLoggedIn? "Welcome Back!" : "Log in."}</h2>
-            <button onClick={toggleLogin}>
-                {isLoggedIn? "Log out" : "Log in"}
-            </button>
+            {isLoggedIn ? (
+                <div>
+                    <h2>Welcome Back!</h2>
+                    <button onClick={toggleLogin}>LogOut</button>
+                </div>
+            ) : (
+                <div>
+                    <h2>Please Sign in.</h2>
+                    <button onClick={toggleLogin}>Log in</button>
+                </div>
+            )}
         </div>
     )
 }
